@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TheCrew" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/TheCrew3</item>
+        <item name="colorPrimaryVariant">@color/TheCrew1</item>
+        <item name="colorOnPrimary">@color/TheCrew2</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/TheCrew1</item>
+        <item name="colorSecondaryVariant">@color/TheCrew3</item>
+        <item name="colorOnSecondary">@color/TheCrew2</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/TheCrew2</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

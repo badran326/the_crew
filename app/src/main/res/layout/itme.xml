@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/circle"
+    android:elevation="4dp"
+    android:outlineProvider="bounds">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:outlineProvider="paddedBounds"
+        android:shadowColor="@color/TheCrew2"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        android:text="Badr"
+        android:textColor="@color/TheCrew1"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_margin="8dp">
+
+        <CheckBox
+            android:id="@+id/Nescafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/Sugar"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:clickable="false"
+            android:text="Nescafe"
+            android:textColor="@color/TheCrew2"/>
+
+        <CheckBox
+            android:id="@+id/Coffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/Sugar"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:clickable="false"
+            android:text="Coffee"
+            android:textColor="@color/TheCrew2" />
+
+        <CheckBox
+            android:id="@+id/Canderel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/Sugar"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:clickable="false"
+            android:text="Canderel"
+            android:textColor="@color/TheCrew2"/>
+
+        <CheckBox
+            android:id="@+id/Sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dp"
+            android:clickable="false"
+            android:text="Sugar"
+            android:textColor="@color/TheCrew2"/>
+
+        <CheckBox
+            android:id="@+id/Nestle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sugar"
+            android:layout_margin="2dp"
+            android:layout_toStartOf="@id/Sugar"
+            android:clickable="false"
+            android:text="Nestle"
+            android:textColor="@color/TheCrew2"/>
+
+        <CheckBox
+            android:id="@+id/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Sugar"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/Sugar"
+            android:clickable="false"
+            android:text="Black"
+            android:textColor="@color/TheCrew2"/>
+
+        <CheckBox
+            android:id="@+id/coffeeMate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:clickable="false"
+            android:text="No Sugar"
+            android:textColor="@color/TheCrew2" />
+
+    </RelativeLayout>
+</RelativeLayout>

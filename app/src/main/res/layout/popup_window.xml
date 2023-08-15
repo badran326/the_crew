@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popUpRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BB86FC">
+
+    <LinearLayout
+        android:id="@+id/popUpLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/popupbg"
+        android:backgroundTint="@color/TheCrew2"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/TheCrew1"
+            android:hint="Your Name"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/TheCrew3"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColorHint="@color/TheCrew3"
+            android:inputType="textCapSentences|textAutoCorrect" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/TheCrew3"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/circle"
+            android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/Nescafe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="32dp"
+            android:textStyle="bold"
+            android:shadowColor="@color/TheCrew2"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:textSize="18sp"
+            android:textColor="@color/TheCrew1"
+            android:text="Nescafe"/>
+
+            <CheckBox
+                android:id="@+id/Coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:textStyle="bold"
+                android:shadowColor="@color/TheCrew2"
+                android:shadowDy="10"
+                android:shadowRadius="10"
+                android:textSize="18sp"
+                android:textColor="@color/TheCrew1"
+                android:text="Coffee"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingBottom="4dp"
+            android:backgroundTint="@color/TheCrew3"
+            android:background="@drawable/circle"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/Canderel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:shadowColor="@color/TheCrew2"
+                android:shadowDy="10"
+                android:shadowRadius="10"
+                android:textColor="@color/TheCrew1"
+                android:text="Canderel"/>
+
+            <CheckBox
+                android:id="@+id/Sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:shadowColor="@color/TheCrew2"
+                android:shadowDy="10"
+                android:shadowRadius="10"
+                android:textSize="18sp"
+                android:textColor="@color/TheCrew1"
+                android:text="Sugar"/>
+
+            <CheckBox
+                android:id="@+id/Nestle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:textStyle="bold"
+                android:shadowColor="@color/TheCrew2"
+                android:shadowDy="10"
+                android:shadowRadius="10"
+                android:textSize="18sp"
+                android:textColor="@color/TheCrew1"
+                android:text="Nestle"/>
+
+            <CheckBox
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/Sugar"
+                android:layout_below="@id/Sugar"
+                android:textStyle="bold"
+                android:shadowColor="@color/TheCrew2"
+                android:shadowDy="10"
+                android:shadowRadius="10"
+                android:textSize="18sp"
+                android:textColor="@color/TheCrew1"
+                android:text="Black"/>
+
+            <CheckBox
+                android:id="@+id/coffeeMate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Sugar"
+                android:layout_below="@id/Sugar"
+                android:textStyle="bold"
+                android:shadowColor="@color/TheCrew2"
+                android:shadowDy="10"
+                android:shadowRadius="10"
+                android:textSize="18sp"
+                android:textColor="@color/TheCrew1"
+                android:text="No Sugar"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/otherLY"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/TheCrew3"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/circle"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:shadowColor="@color/TheCrew2"
+                android:shadowDy="10"
+                android:shadowRadius="10"
+                android:textSize="18sp"
+                android:textColor="@color/TheCrew1"
+                android:text="Other"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/other_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:visibility="invisible"
+            android:textColor="@color/TheCrew1"
+            android:backgroundTint="@color/TheCrew3"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColorHint="@color/TheCrew3"
+            android:layout_marginStart="8dp"
+            android:hint="Anything else"
+            android:inputType="textCapSentences|textAutoCorrect"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/circle"
+                android:text="Cancel"/>
+
+            <Button
+                android:id="@+id/o_k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/circle"
+                android:text="OK"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
